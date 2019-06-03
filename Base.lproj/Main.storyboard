@@ -38,6 +38,9 @@
                                             <state key="normal" title="Post">
                                                 <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="postButtonTapped:" destination="Ilz-Ng-Q1e" eventType="touchUpInside" id="YtZ-vv-5zj"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
@@ -81,6 +84,9 @@
                             <outlet property="delegate" destination="Ilz-Ng-Q1e" id="TDV-9b-Agr"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="messageTextField" destination="mon-2w-lXv" id="BVM-6R-9Zs"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RhQ-RQ-bxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
