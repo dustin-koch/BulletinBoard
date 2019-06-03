@@ -13,6 +13,8 @@
 		CAB4319122A5838800EFD4D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB4319022A5838800EFD4D9 /* Assets.xcassets */; };
 		CAB4319422A5838800EFD4D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB4319222A5838800EFD4D9 /* LaunchScreen.storyboard */; };
 		CAB4319D22A5875D00EFD4D9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4319C22A5875D00EFD4D9 /* Message.swift */; };
+		CAB431A022A5BACA00EFD4D9 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4319F22A5BACA00EFD4D9 /* MessageController.swift */; };
+		CAB431A322A5C01200EFD4D9 /* MessageListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB431A222A5C01200EFD4D9 /* MessageListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CAB4319322A5838800EFD4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAB4319522A5838800EFD4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAB4319C22A5875D00EFD4D9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CAB4319F22A5BACA00EFD4D9 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		CAB431A222A5C01200EFD4D9 /* MessageListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,8 @@
 			isa = PBXGroup;
 			children = (
 				CAB4318D22A5838600EFD4D9 /* Main.storyboard */,
+				CAB431A422A5C01700EFD4D9 /* View Controllers */,
+				CAB431A122A5BACD00EFD4D9 /* Model Controllers */,
 				CAB4319E22A587B500EFD4D9 /* Models */,
 				CAB4318822A5838600EFD4D9 /* BulletinBoard */,
 				CAB4318722A5838600EFD4D9 /* Products */,
@@ -81,6 +87,22 @@
 				CAB4319C22A5875D00EFD4D9 /* Message.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CAB431A122A5BACD00EFD4D9 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAB4319F22A5BACA00EFD4D9 /* MessageController.swift */,
+			);
+			name = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		CAB431A422A5C01700EFD4D9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAB431A222A5C01200EFD4D9 /* MessageListTableViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +179,8 @@
 				CAB4319D22A5875D00EFD4D9 /* Message.swift in Sources */,
 				CAB4318C22A5838600EFD4D9 /* ViewController.swift in Sources */,
 				CAB4318A22A5838600EFD4D9 /* AppDelegate.swift in Sources */,
+				CAB431A022A5BACA00EFD4D9 /* MessageController.swift in Sources */,
+				CAB431A322A5C01200EFD4D9 /* MessageListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
