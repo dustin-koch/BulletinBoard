@@ -12,6 +12,7 @@
 		CAB4318F22A5838600EFD4D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB4318D22A5838600EFD4D9 /* Main.storyboard */; };
 		CAB4319122A5838800EFD4D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB4319022A5838800EFD4D9 /* Assets.xcassets */; };
 		CAB4319422A5838800EFD4D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB4319222A5838800EFD4D9 /* LaunchScreen.storyboard */; };
+		CAB4319D22A5875D00EFD4D9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4319C22A5875D00EFD4D9 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CAB4319022A5838800EFD4D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAB4319322A5838800EFD4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAB4319522A5838800EFD4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB4319C22A5875D00EFD4D9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,8 @@
 		CAB4317D22A5838600EFD4D9 = {
 			isa = PBXGroup;
 			children = (
+				CAB4318D22A5838600EFD4D9 /* Main.storyboard */,
+				CAB4319E22A587B500EFD4D9 /* Models */,
 				CAB4318822A5838600EFD4D9 /* BulletinBoard */,
 				CAB4318722A5838600EFD4D9 /* Products */,
 			);
@@ -54,14 +58,29 @@
 		CAB4318822A5838600EFD4D9 /* BulletinBoard */ = {
 			isa = PBXGroup;
 			children = (
-				CAB4318922A5838600EFD4D9 /* AppDelegate.swift */,
+				CAB4319B22A5853800EFD4D9 /* Resources */,
 				CAB4318B22A5838600EFD4D9 /* ViewController.swift */,
-				CAB4318D22A5838600EFD4D9 /* Main.storyboard */,
+			);
+			path = BulletinBoard;
+			sourceTree = "<group>";
+		};
+		CAB4319B22A5853800EFD4D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CAB4318922A5838600EFD4D9 /* AppDelegate.swift */,
 				CAB4319022A5838800EFD4D9 /* Assets.xcassets */,
 				CAB4319222A5838800EFD4D9 /* LaunchScreen.storyboard */,
 				CAB4319522A5838800EFD4D9 /* Info.plist */,
 			);
-			path = BulletinBoard;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CAB4319E22A587B500EFD4D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAB4319C22A5875D00EFD4D9 /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB4319D22A5875D00EFD4D9 /* Message.swift in Sources */,
 				CAB4318C22A5838600EFD4D9 /* ViewController.swift in Sources */,
 				CAB4318A22A5838600EFD4D9 /* AppDelegate.swift in Sources */,
 			);
@@ -284,7 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D445CT62ZR;
-				INFOPLIST_FILE = BulletinBoard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BulletinBoard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D445CT62ZR;
-				INFOPLIST_FILE = BulletinBoard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BulletinBoard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
