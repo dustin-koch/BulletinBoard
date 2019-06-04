@@ -81,4 +81,26 @@ class MessageController {
         }
     }
     
+    //SUBSCRIBE TO NOTIFICATIONS
+    func subscribeToNotifications(completion: @escaping (Error?) -> Void ) {
+        //Configuring what type of subscription desired
+        let predicate = NSPredicate(value: true)
+        let subscription = CKQuerySubscription(recordType: Constants.recordKey, predicate: predicate, options: .firesOnRecordCreation)
+        //Setting up subscription info
+        let notificationInfo = CKSubscription.NotificationInfo()
+        notificationInfo.alertBody = "New post! Would you look at that?!"
+        notificationInfo.shouldBadge = true
+        notificationInfo.soundName = "default"
+        subscription.notificationInfo = notificationInfo
+        
+        privateDB.save(subscription) { (_, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                completion(error)
+                return
+            }
+            completion(nil)
+        }
+    }
+    
 }//END OF MESSAGE CONTROLLER

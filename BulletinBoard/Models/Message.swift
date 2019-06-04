@@ -45,6 +45,6 @@ extension CKRecord {
 
 extension Message: Equatable {
     static func == (lhs: Message, rhs: Message) -> Bool {
-        return lhs.text == rhs.text && lhs.timeStamp == rhs.timeStamp && lhs.ckRecordId == rhs.ckRecordId
+        return lhs.ckRecordId == rhs.ckRecordId
     }
 }
